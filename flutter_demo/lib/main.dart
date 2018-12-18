@@ -51,9 +51,9 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text("根据官方教程，学习使用，papa～～"),
+            Text("根据官方教程，学习使用，pa~pa～～"),
             Text(
-              "业精于勤而荒于嬉，行成于思毁于随!\nCherry Up!!!",
+              "业精于勤而荒于嬉，行成于思毁于随!\nCheer Up!!!",
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 20.0, color: Colors.redAccent),
             ),
