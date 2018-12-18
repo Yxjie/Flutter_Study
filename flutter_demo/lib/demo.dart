@@ -17,6 +17,7 @@ class DemoWidget extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
+          CustomHeader(title: "基础Widgets"),
           CustomList(
               title: "路由表使用",
               callback: () {
@@ -67,11 +68,44 @@ class DemoWidget extends StatelessWidget {
           CustomList(
               title: "输入框(监听以及焦点处理)",
               callback: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => TextFieldWidget2()));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => TextFieldWidget2()));
               }),
+          CustomList(
+              title: "表单",
+              callback: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => TextFormField()));
+              }),
+          CustomHeader(title: "布局类Widgets"),
         ],
       ),
+    );
+  }
+}
+
+class CustomHeader extends StatelessWidget {
+  final String title;
+
+  CustomHeader({Key key, @required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Center(
+            child: Text(
+          title,
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 18.0,
+          ),
+        )),
+      ),
+      color: Colors.grey,
     );
   }
 }
