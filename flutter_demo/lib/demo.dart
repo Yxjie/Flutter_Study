@@ -6,6 +6,7 @@ import 'btn.dart';
 import 'icon.dart';
 import 'switchAndCheckbox.dart';
 import 'textField.dart';
+import 'textFiled2.dart';
 
 class DemoWidget extends StatelessWidget {
   @override
@@ -58,11 +59,17 @@ class DemoWidget extends StatelessWidget {
                         builder: (context) => SwitchAndCheckboxWidget()));
               }),
           CustomList(
-              title: "输入框及表单",
+              title: "输入框",
               callback: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => TextFieldWidget()));
-              })
+              }),
+          CustomList(
+              title: "输入框(监听以及焦点处理)",
+              callback: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => TextFieldWidget2()));
+              }),
         ],
       ),
     );
