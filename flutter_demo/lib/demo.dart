@@ -3,13 +3,16 @@ import 'routerSheet.dart';
 import 'Cupertino.dart';
 import 'text.dart';
 import 'btn.dart';
+import 'icon.dart';
+import 'switchAndCheckbox.dart';
+import 'textField.dart';
 
 class DemoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("使用Demo"),
+        title: Text("使用案例"),
       ),
       body: ListView(
         children: <Widget>[
@@ -40,6 +43,26 @@ class DemoWidget extends StatelessWidget {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => BtnWidget()));
               }),
+          CustomList(
+              title: "图片及ICON",
+              callback: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => IconWidget()));
+              }),
+          CustomList(
+              title: "单选开关和复选框",
+              callback: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => SwitchAndCheckboxWidget()));
+              }),
+          CustomList(
+              title: "输入框及表单",
+              callback: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => TextFieldWidget()));
+              })
         ],
       ),
     );
