@@ -8,6 +8,7 @@ import 'switchAndCheckbox.dart';
 import 'textField.dart';
 import 'textFiled2.dart';
 import 'TextForm.dart';
+import 'container/LinearLayout.dart';
 
 class DemoWidget extends StatelessWidget {
   @override
@@ -81,6 +82,12 @@ class DemoWidget extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => TextFormWidget()));
               }),
           CustomHeader(title: "布局类Widgets"),
+          CustomList(
+              title: "线性布局Row和Column",
+              callback: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => LinearlayoutWidget()));
+              }),
         ],
       ),
     );

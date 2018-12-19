@@ -64,19 +64,23 @@ class TextFormWidgetState extends State<TextFormWidget> {
                   padding: const EdgeInsets.only(top: 28.0),
                   child: Row(
                     children: <Widget>[
+                      //Expanded会填满Row在主轴方向的剩余空间，撑开Row
                       Expanded(
                           child: RaisedButton(
                         padding: EdgeInsets.all(15.0),
                         child: Text("登陆"),
+                        //获取主题色颜色
                         color: Theme.of(context).primaryColor,
                         textColor: Colors.white,
                         onPressed: () {
+                          //开始校验
                           if ((_formKey.currentState as FormState).validate()) {
                             Fluttertoast.showToast(
                               msg: "数据验证成功！",
                               toastLength: Toast.LENGTH_SHORT,
                               gravity: ToastGravity.CENTER,
                             );
+                            Navigator.pop(context);
                           }
                         },
                       ))

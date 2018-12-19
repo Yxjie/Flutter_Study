@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.display1,
             ),
             RaisedButton(
-              child: Text("查看更多事例"),
+              child: Text("查看更多案例"),
               textColor: Colors.white,
               color: Colors.blueAccent,
               onPressed: () {
