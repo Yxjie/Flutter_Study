@@ -7,6 +7,7 @@ import 'icon.dart';
 import 'switchAndCheckbox.dart';
 import 'textField.dart';
 import 'textFiled2.dart';
+import 'TextForm.dart';
 
 class DemoWidget extends StatelessWidget {
   @override
@@ -77,7 +78,7 @@ class DemoWidget extends StatelessWidget {
               title: "表单",
               callback: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => TextFormField()));
+                    MaterialPageRoute(builder: (context) => TextFormWidget()));
               }),
           CustomHeader(title: "布局类Widgets"),
         ],
@@ -102,10 +103,11 @@ class CustomHeader extends StatelessWidget {
           style: TextStyle(
             color: Colors.white,
             fontSize: 18.0,
+            fontWeight: FontWeight.bold
           ),
         )),
       ),
-      color: Colors.grey,
+      color: Colors.lightBlueAccent[200],
     );
   }
 }
