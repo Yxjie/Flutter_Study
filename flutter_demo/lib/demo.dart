@@ -9,6 +9,7 @@ import 'textField.dart';
 import 'textFiled2.dart';
 import 'TextForm.dart';
 import 'container/LinearLayout.dart';
+import 'container/FlexLayout.dart';
 
 class DemoWidget extends StatelessWidget {
   @override
@@ -87,6 +88,12 @@ class DemoWidget extends StatelessWidget {
               callback: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => LinearlayoutWidget()));
+              }),
+          CustomList(
+              title: "弹性布局Flex",
+              callback: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => FlexlayoutWidget()));
               }),
         ],
       ),
