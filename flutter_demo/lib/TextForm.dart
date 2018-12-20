@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+//import 'package:fluttertoast/fluttertoast.dart';
 
 class TextFormWidget extends StatefulWidget {
   @override
@@ -75,11 +75,11 @@ class TextFormWidgetState extends State<TextFormWidget> {
                         onPressed: () {
                           //开始校验
                           if ((_formKey.currentState as FormState).validate()) {
-                            Fluttertoast.showToast(
-                              msg: "数据验证成功！",
-                              toastLength: Toast.LENGTH_SHORT,
-                              gravity: ToastGravity.CENTER,
-                            );
+//                            Fluttertoast.showToast(
+//                              msg: "数据验证成功！",
+//                              toastLength: Toast.LENGTH_SHORT,
+//                              gravity: ToastGravity.CENTER,
+//                            );
                             Navigator.pop(context);
                           }
                         },
