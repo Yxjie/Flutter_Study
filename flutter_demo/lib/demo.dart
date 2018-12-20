@@ -95,7 +95,7 @@ class DemoWidget extends StatelessWidget {
               title: "弹性布局Flex",
               callback: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => FlexlayoutWidget()));
+                    MaterialPageRoute(builder: (context) => FlexLayoutWidget()));
               }),
 
           CustomList(title: "流式布局Flow,Wrap", callback: (){
