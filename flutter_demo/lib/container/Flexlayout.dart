@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class FlexLayoutWidget extends StatelessWidget{
+class FlexlayoutWidget extends StatelessWidget{
   
   @override
   Widget build(BuildContext context) {
