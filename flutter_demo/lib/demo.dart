@@ -10,6 +10,7 @@ import 'textFiled2.dart';
 import 'TextForm.dart';
 import 'container/LinearLayout.dart';
 import 'container/FlowLayout.dart';
+import 'container/StackLayout.dart';
 
 class DemoWidget extends StatelessWidget {
   @override
@@ -93,6 +94,10 @@ class DemoWidget extends StatelessWidget {
 
           CustomList(title: "流式布局Flow,Wrap", callback: (){
             Navigator.push(context, MaterialPageRoute(builder: (context)=> FlowLayoutWidget()));
+          }),
+
+          CustomList(title: "层叠布局Stack,Positioned", callback: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> StackLayoutWidget()));
           }),
         ],
       ),
